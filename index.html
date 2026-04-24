@@ -328,6 +328,74 @@
             .footer-logo img { width: 240px; }
         }
 
+        @media (max-width: 480px) {
+            .plan-activo {
+                width: 100%;
+                max-width: 100%;
+                padding: 24px 16px;
+                overflow: hidden;
+            }
+            .plan-activo-title,
+            .plan-activo-grid,
+            .plan-activo-pricing,
+            .pricing-tabs,
+            .pricing-panel,
+            .pricing-option,
+            .plan-activo-cta,
+            .btn-plan-activo {
+                width: 100%;
+                max-width: 100%;
+                min-width: 0;
+            }
+            .plan-activo-features li {
+                align-items: flex-start;
+                line-height: 1.45;
+                overflow-wrap: anywhere;
+            }
+            .plan-activo-features li i {
+                flex: 0 0 auto;
+            }
+            .pricing-tabs {
+                gap: 4px;
+                padding: 5px;
+            }
+            .pricing-tab {
+                min-width: 0;
+                padding: 9px 4px;
+                font-size: 0.72rem;
+                gap: 3px;
+                white-space: normal;
+                line-height: 1.15;
+            }
+            .tab-badge {
+                font-size: 0.58rem;
+                padding: 2px 4px;
+                flex-shrink: 0;
+            }
+            .pricing-option {
+                overflow: visible;
+                word-break: normal;
+                overflow-wrap: anywhere;
+            }
+            .pricing-option-left,
+            .pricing-option-price {
+                width: 100%;
+                max-width: 100%;
+                min-width: 0;
+            }
+            .pricing-option-left > div:last-child {
+                min-width: 0;
+            }
+            .pricing-option-amount {
+                font-size: 1rem;
+                overflow-wrap: anywhere;
+            }
+            .btn-plan-activo {
+                text-align: center;
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+        }
         .map-placeholder { position: relative; height: 250px; border-radius: 24px; overflow: hidden; cursor: pointer; background: linear-gradient(135deg, #1a2a1a 0%, #243024 50%, #1a241a 100%); border: 1px solid rgba(154,178,38,0.25); transition: border-color 0.2s; }
         .map-placeholder::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent 0 28px, rgba(154,178,38,0.08) 28px 29px), repeating-linear-gradient(90deg, transparent 0 28px, rgba(154,178,38,0.08) 28px 29px); opacity: 0.7; }
         .map-placeholder:hover, .map-placeholder:focus-visible { border-color: rgba(154,178,38,0.6); outline: none; }
